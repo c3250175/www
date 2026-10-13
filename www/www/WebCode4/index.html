@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>図書館利用カード CSS練習</title>
+  <style>
+    body {
+      font-size: 16px;
+      color: #333333;
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      background-color: #eef6ed;
+      background-image: url("images/bg_note.png");
+      background-repeat: repeat;
+    }
+
+    #container {
+      width:  680px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border: 3px solid #6b8e23;
+    }
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #dcefd3;
+    }
+
+    header > p {
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #3f5f20;
+    }
+
+    nav {
+      padding: 10px 20px;
+      background-color: #f2f7e9;
+    }
+
+    nav li {
+      list-style-type: circle;
+      line-height: 1.8;
+    }
+
+    main {
+      padding: 15px;
+    }
+
+    section {
+      margin: 15px 0;
+      padding: 15px;
+      border: 2px solid #6b8e23;
+      background-color: #fbfff5;
+    }
+
+    #photo img {
+      width: 320px;
+    }
+
+    footer {
+      height:  45px;
+      padding: 10px;
+      background-color: #dcefd3;
+    }
+
+    footer p {
+      line-height: 45px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header id="top">
+      <h1>図書館利用カード CSS練習</h1>
+      <p>このページは、図書館を利用するときの確認事項をまとめた練習ページです。</p>
+
+      <nav>
+        <ul>
+          <li><a href="#info">利用案内へ</a></li>
+          <li><a href="#photo">図書館イメージへ</a></li>
+          <li><a href="#check">確認リストへ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section="info">
+          <h2>利用案内</h2>
+          <p>図書館を利用するときは、開館時間と返却期限を確認します。</p>
+          <p>ページ内リンクでは、href属性とid属性を対応させます。</p>
+        </section>
+
+        <section id="photo">
+          <h2>図書館イメージ</h2>
+          <p><img src="images/library.jpg" alt="図書館の本棚をイメージしたイラスト"></p>
+        </section>
+
+        <section id="check">
+          <h2>確認リスト</h2>
+          <ul>
+            <li>学生証を持っているか確認する</li>
+            <li>返却期限を確認する</li>
+            <li>静かに利用する</li>
+          </ul>
+          <p><a href="#top">ページ上部へ戻る</a></p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p><small>&copy; 2026 Web制作Ⅰ &amp; Library Practice.</small></p>
+    </footer>
+  </div>
+</body>
+</html>

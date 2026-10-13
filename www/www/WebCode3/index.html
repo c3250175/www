@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  WebCode3：コード入力練習
+  Teamsの課題文を見ながら、このファイルにHTMLとCSSを入力してください。
+  保存場所：www/WebCode3/index.html
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>学内掲示ボード CSS練習</title>
+<style>
+body { 
+font-size: 16px;
+color: #333333;
+font-family: "Yu Gothic", "Meiryo", sans-serif; background-color: #f5f1e8; background-image: url("images/bg_grid.png");
+background-repeat: repeat-y;
+}
+#wrap {
+width: 760px;
+margin: 20px auto;
+background-color: #ffffff; border: 3px solid #8b5a2b;
+}
+
+h1, h2, p{
+margin: 0;
+}
+
+header {
+padding: 20px;
+background-color: #fff3d6;
+}
+
+header > p { 
+line-height: 1.6;
+}
+hl{
+font-size: 30px; color: brown;
+}
+h2 {
+font-size: 22px; color: darkred;
+}
+
+nav {
+padding: 10px 20px;
+background-color: burlywood;
+}
+nav li{
+list-style-type: square;
+line-height: 1.8;
+}
+
+main { 
+padding: 15px;
+}
+section {
+margin: 15px 0; padding: 15px;
+border: 2px dashed #8b5a2b; background-color: #fffaf0;
+}
+#photo {
+background-color: ivory;
+}
+#photo img {
+width: 360px;
+}
+
+strong {
+color: red;
+font-weight: bold;
+}
+em {
+color: darkgreen; font-style: italic;
+}
+footer {
+height: 45px;
+padding: 10px;
+background-color: #d9c3a5;
+}
+footer p {
+line-height: 45px;
+}
+</style>
+</head> 
+<body>
+<div id="wrap">
+<header id="top">
+<h1>学内掲示ボード CSS 練習</h1>
+<p>このページは、CSSの文字設定、背景、ボックスモデルを確認するための練習ページです。
+</p>
+<p><strong>CSSは、セレクタ、プロパティ、値の形で書きます。</strong></p>
+<nav>
+<ul>
+<li><ahref="#text">文字の設定へ</a></Li>
+<li><a href="#photo">背景と画像～</a></li>
+<li><ahref="#box">ボックスモデルへ</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<article>
+<section id="text">
+
+  <h2>文字の設定</h2>
+<p>文字サイズはfont-size、文字色は colorで指定します。</p><p><em>フォントの種類はfont-family で指定します。</em></p>
+</section>
+<section id="photo">
+<h2>背景と画像</h2>
+<p>背景色はbackground-color、背景画像は background-imageで指定します。</p>
+<px><img src="images/campus_board.jpg" alt="学内掲示板をイメージしたイラスト"></p>
+</section>
+<section id="box">
+<h2>ボックスモデル</h2>
+<p>ボックスモデルでは、内容、内側の余白、枠線、外側の余白を区別します。</p>
+<nav>
+<ul>
+<li>widthで内容の幅を指定する</li>
+<li>paddingで内側の余白を指定する</li>
+<li>border で枠線を指定する</li>
+<li>margin で外側の余白を指定する</li>
+</ul>
+</nav>
+<p><a href="#top">ページ上部へ戻る</a></p>
+</section>
+</article>
+</main>
+<footer>
+<p><small>&copy; 2026 Web 制作 I &amp; CSS Practice.</small></p>
+</footer>
+</div>
+</body>
+</html>

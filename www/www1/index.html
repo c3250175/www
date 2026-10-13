@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>キャンパスアクセスガイド</title>
+  <style>
+    /* ページ全体 */
+    body {
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      background-color: #eef4f5;
+      color: #333333;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* 外側のボックス */
+    #wrap {
+      width: 820px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border: 1px solid #8aa5a8;
+      overflow: hidden;
+    }
+
+    /* ヘッダー */
+    header {
+      background-color: #2f6f73;
+      color: white;
+      padding: 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header > p {
+      margin: 8px 0 0 0;
+    }
+
+    /* 左側ナビゲーション */
+    nav {
+      width: 180px;
+      float: left;
+      padding: 15px;
+      background-color: #e6f1f2;
+    }
+
+    nav h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      list-style-type: none;
+      margin-bottom: 8px;
+    }
+
+    nav a {
+      display: block;
+      color: #2f6f73;
+      text-decoration: none;
+      background-color: white;
+      border: 1px solid #8aa5a8;
+      padding: 8px;
+    }
+
+    /* 右側メイン */
+    main {
+      width: 560px;
+      float: right;
+      padding: 18px;
+      background-color: #fafafa;
+    }
+
+    section {
+      margin-bottom: 18px;
+      padding: 12px;
+      border: 2px solid #8aa5a8;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    h2, h3 {
+      color: #2f6f73;
+    }
+
+    .photo {
+      float: right;
+      width: 180px;
+      margin-left: 15px;
+      border: 1px solid #999999;
+    }
+
+    .step {
+      width: 140px;
+      height: 135px;
+      float: left;
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid #8aa5a8;
+      background-color: #edf8f5;
+      overflow: hidden;
+    }
+
+    #memo {
+      clear: both;
+      height: 95px;
+      overflow: scroll;
+      background-color: #fff8dc;
+      border: 2px dashed #b85742;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      background-color: #2f6f73;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="top">
+      <h1>キャンパスアクセスガイド</h1>
+      <p>初めて大学に来る人に向けて、受付までの流れをまとめたページです。</p>
+    </header>
+
+    <nav>
+      <h2>メニュー</h2>
+      <ul>
+        <li><a href="#access">アクセス確認</a></li>
+        <li><a href="#flow">来校の流れ</a></li>
+        <li><a href="#support">サポート窓口</a></li>
+        <li><a href="#memo">確認メモ</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="access">
+        <h2>アクセス確認</h2>
+        <img src="images/access_map.jpg" alt="大学周辺のアクセスを示す簡単な地図" class="photo">
+        <p>正門から入ったら、最初に案内掲示を確認します。バス停や駐輪場から来る場合も、受付の場所を先に確認しておくと安心です。</p>
+        <p>画像は右側に回り込ませています。本文が画像の横に配置される様子を確認してください。</p>
+      </section>
+
+      <section id="flow">
+        <h2>来校の流れ</h2>
+        <div class="step">
+          <h3>1. 正門</h3>
+          <p>大学の入口で案内表示を確認します。</p>
+        </div>
+        <div class="step">
+          <h3>2. 受付</h3>
+          <p>必要な手続きや資料の受け取りを行います。</p>
+        </div>
+        <div class="step">
+          <h3>3. 教室</h3>
+          <p>案内に従って、目的の教室や施設へ移動します。</p>
+        </div>
+      </section>
+
+      <section id="support">
+        <h2>サポート窓口</h2>
+        <img src="images/support_desk.jpg" alt="学生向けサポート窓口のイラスト" class="photo">
+        <p>分からないことがある場合は、近くの窓口で確認します。授業、施設、証明書など、内容によって相談先が変わることがあります。</p>
+      </section>
+
+      <section id="memo">
+        <h2>確認メモ</h2>
+        <p>この欄は高さを指定し、内容が多い場合にスクロールして読めるようにしています。overflowプロパティの働きを確認してください。受付時間、持ち物、集合場所、連絡先、当日の注意点などをここにまとめることができます。</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Web制作Ⅰ CSSレイアウト穴埋め練習</p>
+    </footer>
+  </div>
+</body>
+</html>
