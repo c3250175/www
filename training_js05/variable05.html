@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>変数の利用</title>
+    </head>
+    <body>
+        <h3>変数の演算</h3>
+        <p>a=10,b=4の場合</p>
+        <button onclick="tasizan()">足し算</button>
+        <button onclick="hikizan()">引き算</button>
+        <button onclick="kakezan()">掛け算</button>
+        <button onclick="warizan()">割り算</button>
+        <script>
+            let a = 10;
+            let b = 4;
+            function tasizan(){
+                alert("答えは" + (a + b) + "です");
+            }
+            function hikizan(){
+                alert("答えは" + (a - b) + "です");
+            }
+            function kakezan(){
+                alert("答えは" + (a * b) + "です");
+            }
+            function warizan(){
+                alert("答えは" + (a / b) + "です");
+            }
+        </script>
+    </body>
+</html>
