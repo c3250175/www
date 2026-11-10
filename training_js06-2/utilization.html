@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>要素の取得と内容の変更</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #thanks {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>座席の予約</h1>
+
+    <p>
+        東京会場
+        <span id="status">（予約受付中）</span>
+    </p>
+
+    <button id="btn" onclick="reserve()">予約する</button>
+
+    <p id="thanks"></p>
+
+    <script>
+        function reserve() {
+            document.getElementById("status").innerHTML =
+                "（予約済み）";
+
+            document.getElementById("btn").remove();
+
+            document.getElementById("thanks").innerHTML =
+                "ありがとうございました。";
+        }
+    </script>
+
+</body>
+</html>
